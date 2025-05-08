@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beyond the Brush</title>
+        <link rel="stylesheet" href="https://use.typekit.net/vvu0wfp.css"> <!-- Font: learning-curve & masillia -->
+    
+        <style>
+            body {
+                margin: 0;
+                background-color: black;
+                color: white;
+                height: 100vh;
+                text-align: center;
+                font-family: "Helvetica Neue", sans-serif;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container {
+                padding: 20px;
+                max-width: 800px;
+            }
+
+            .title-letters {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            .letter-box {
+                position: relative;
+                cursor: pointer;
+            }
+
+            .letter {
+                font-size: 5rem;
+                font-weight: bold;
+                color: white;
+                transition: color 0.3s ease;
+            }
+
+            .letter-box:hover .letter {
+                color: #FFD166;
+            }
+
+            .description {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 250px;
+                background-color: #222;
+                color: #FFD166;
+                padding: 10px;
+                border-radius: 10px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                font-size: 0.95rem;
+                pointer-events: none;
+                z-index: 1;
+            }
+
+            .letter-box:hover .description {
+                opacity: 1;
+            }
+
+            .subtitle{
+                font-family: "learning-curve", sans-serif;
+                font-weight: 700;
+                font-size: 2rem;
+                color: #ccc;
+                margin-bottom: 30px;
+            }
+
+            .corner-text {
+                position: fixed;
+                bottom: 100px;
+                right: 40px;
+                font-size: 0.95rem;
+                color: #ccc;
+                text-align: right;
+                text-decoration: none;
+                max-width: 250px;
+                line-height: 1.4;
+                z-index: 10;
+                transition: all 0.3s ease;
+                font-family: "massilia", sans-serif;
+                } 
+    
+            .corner-text:hover .highlight {
+                color: #FFD166; 
+            }
+
+            .corner-text:hover {
+                color: #fff;
+            }
+
+            .content{
+                font-size: 0.95rem;
+            }
+    
+            footer {
+                margin-top: 50px;
+                font-size: 0.75rem;
+                color: #666;
+                position: fixed;
+                left: 0;
+                bottom: 10px;
+                text-align: center;
+                width: 100%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="title-letters">
+                <div class="letter-box">
+                  <div class="letter">B</div>
+                  <div class="description">Boundary – Draw thoughtful boundaries between machine-made creations and the soul of human expression</div>
+                </div>
+                <div class="letter-box">
+                  <div class="letter">E</div>
+                  <div class="description">Ethics – Confront the ethical questions AI raises, seeking responsibility and fairness in how we move forward</div>
+                </div>
+                <div class="letter-box">
+                  <div class="letter">Y</div>
+                  <div class="description">Yield – Recognize the impact and consequences of AI in the art world, and shape its course with awareness</div>
+                </div>
+                <div class="letter-box">
+                  <div class="letter">O</div>
+                  <div class="description">Originality – Protect the originality of human art and promote transparency around the sources behind AI-generated work</div>
+                </div>
+                <div class="letter-box">
+                  <div class="letter">N</div>
+                  <div class="description">Notion – Honor the notion that art is more than image—it is memory, identity, and the spirit of our shared humanity</div>
+                </div>
+                <div class="letter-box">
+                  <div class="letter">D</div>
+                  <div class="description">Dialogue – Foster open and compassionate discussions and decisions to shape the future of art with careful consideration</div>
+                </div>
+            </div>
+
+            <div class="subtitle">
+                <p>the Brush</p>
+            </div>
+
+            <a class="corner-text" href="content.html">
+                Let's go <span class="highlight">beyond</span> the surface and explore the ethics of AI art together
+                <div class="arrow">→</div>
+            </a>
+
+        </div>
+
+        <footer><p>© 2025 DIDA 425 CAPSTONE | By Emily DeJesus, Shan Mei Kong, Anh Sciscent</p></footer>
+
+    </body>
+</html>
